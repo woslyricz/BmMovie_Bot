@@ -140,10 +140,18 @@ Nᴀᴍᴇ - {}
 
 <blockquote>👇 नीचे दिए गए विकल्पों में से movie के नाम की सही spelling चुनें</blockquote>"""
 
+DEL_MSG = """⚠️ <b>COPYRIGHT NOTICE</b> ⚠️
 
-    DEL_MSG = """⚠️ ᴛʜɪꜱ ᴍᴏᴠɪᴇ ꜰɪʟᴇ/ᴠɪᴅᴇᴏ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ <b><u><code>{}</code></u></b>
+🕐 This file will be <b>deleted in <u><code>{}</code></u></b>
 
-<blockquote expandable><b><i>ᴘʟᴇᴀꜱᴇ ꜰᴏʀᴡᴀʀᴅ ᴛʜɪꜱ ꜰɪʟᴇ ᴛᴏ ꜱᴏᴍᴇᴡʜᴇʀᴇ ᴇʟꜱᴇ & ꜱᴛᴀʀᴛ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴛʜᴇʀᴇ</i></b></blockquote>"""
+<blockquote expandable>
+📌 <b>You have 10 minutes to:</b>
+✅ Forward to your Saved Messages
+✅ Download it directly
+
+⛔ File will be removed due to copyright.
+</blockquote>"""
+    
 
 
 
