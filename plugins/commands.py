@@ -411,7 +411,13 @@ async def start(client, message):
                     ]
             else:
             
-                btn = [[InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK)]] 
+                btn = [[InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK)]]
+            await client.send_photo(
+                chat_id=message.from_user.id,
+                photo=FILE_SEND_LOGO,
+                caption="<b>🎬 Here is your requested file!</b>",
+                parse_mode=enums.ParseMode.HTML
+            )    
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
@@ -480,6 +486,12 @@ async def start(client, message):
             ]
     else:
         btn = [[InlineKeyboardButton('📌 ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇꜱ ᴄʜᴀɴɴᴇʟ 📌', url=UPDATE_CHNL_LNK)]]
+    await client.send_photo(
+        chat_id=message.from_user.id,
+        photo=FILE_SEND_LOGO,
+        caption="<b>🎬 Here is your requested file!</b>",
+        parse_mode=enums.ParseMode.HTML
+    )    
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
